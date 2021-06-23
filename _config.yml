@@ -1,0 +1,11 @@
+title: Ray's page!
+author: Ray-13
+description: > # this means to ignore newlines until "baseurl:"
+  Ray's page! Made with github pages.
+
+# social links
+github_username:  RayFB-13 # DO NOT include the @ character, or else the build will fail!
+
+show_excerpts: false # set to false to remove excerpts on the homepage
+
+theme: jekyll-theme-modernist

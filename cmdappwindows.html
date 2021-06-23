@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Rclick</title>
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <script>
+         window.open('C:/Windows/System32/cmd.exe')
+  var count = 0;
+  function updateCount() {
+   count = count + 1;
+   document.getElementById("number").innerHTML = count;
+   setTimeout(updateCount, 1000);
+  }
+   </script>
+</head>
+<body>
+    <div id="number">
+ </div>
+ <script>
+  updateCount();
+ </script>
+</body>
+</html>

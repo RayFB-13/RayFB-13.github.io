@@ -1,0 +1,5 @@
+---
+permalink: /app.txt
+---
+
+data:text/html,<a href="data:application/zip;txt," download="ray.bat">Download</a>

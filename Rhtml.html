@@ -1,0 +1,28 @@
+---
+permalink: /rhtml.html
+---
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Rclick</title>
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <script>
+    function save() {
+	     var newitem = document.getElementById("box").value;
+		 localStorage.box = newitem;
+	}
+	    function lode() {
+	     var sdiv = document.getElementById("list");
+		 sdiv.innerHTML = localStorage.box;
+	}
+   </script>
+</head>
+<body>
+   <input type = "text" id = "box"/>
+   <br/>
+   <input type="button" value="lode" onclick="lode();"/>
+   <br/>
+   <input type="button" value="save" onclick="save();"/>
+</body>
+</html>
+   
