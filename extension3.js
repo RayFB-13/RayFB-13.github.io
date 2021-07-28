@@ -2,9 +2,6 @@ class Rblue {
   constructor () {
     this.lastResponse = null;
   }
-const cl_icon = 'https://www.google.com/favicon.ico';
-const cl_block = 'https://www.google.com/favicon.ico';
-  getInfo () {
     return {
       id: 'Rblue',
       name: 'Rblue',
