@@ -1,1 +1,1 @@
-test news
+news app is made!
