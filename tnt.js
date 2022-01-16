@@ -9,7 +9,7 @@ class MyExtension {
           blockType: Scratch.BlockType.COMMAND,
           text: 'R[RRR]'
           arguments: {
-            R: {
+            RRR: {
               type: Scratch.ArgumentType.REPORTER,
               defaultValue: 'R'
             },
@@ -18,7 +18,7 @@ class MyExtension {
     };
   }
   hello() {
-    return args.R;
+    return args.RRR;
   }
 }
 Scratch.extensions.register(new MyExtension());
