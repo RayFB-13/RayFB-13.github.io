@@ -7,7 +7,7 @@ class MyExtension {
         {
           opcode: 'hello',
           blockType: Scratch.BlockType.COMMAND,
-          text: 'R[R]'
+          text: 'R[RRR]'
           arguments: {
             R: {
               type: Scratch.ArgumentType.REPORTER,
