@@ -10,5 +10,8 @@ show_excerpts: false # set to false to remove excerpts on the homepage
 
 theme: jekyll-theme-modernist
 
-github:
-  is_project_page: false
+@import "{{ site.theme }}";
+
+header {
+  display: none;
+}
