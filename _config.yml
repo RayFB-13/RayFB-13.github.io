@@ -9,9 +9,3 @@ github_username:  RayFB-13 # DO NOT include the @ character, or else the build w
 show_excerpts: false # set to false to remove excerpts on the homepage
 
 theme: jekyll-theme-modernist
-
-
-
-header {
-  display: none;
-}
