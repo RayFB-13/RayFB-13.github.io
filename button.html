@@ -8,7 +8,7 @@
       alert("You Pressed The Button.");
       alert("When You Press ok...");
       alert("Something Happens.");
-      var elem = document.getElementById("badbutton");
+      var elem = document.documentElement;
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
       } else if (elem.webkitRequestFullscreen) { /* Safari */
