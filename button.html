@@ -2,6 +2,19 @@
 <html>
 <head>
   <title>DON'T PRESS THE BUTTON</title>
+  <script>
+    function msg() {
+      while true{
+       alert("Hello world!");
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+  }
+}
+</script>
 </head>
 <body>
 
@@ -9,19 +22,7 @@
   </br>
   <input type="button" value="Button" onclick="msg()">
 
-<script>
-function msg() {
-  while true{
-    alert("Hello world!");
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE11 */
-      elem.msRequestFullscreen();
-  }
-}
-</script>
+
 
 </body>
 </html>
