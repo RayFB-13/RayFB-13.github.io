@@ -8,6 +8,7 @@
       alert("You Pressed The Button.");
       alert("When You Press ok...");
       alert("Something Happens.");
+      var elem = document.getElementById("badbutton");
       if (elem.requestFullscreen) {
         elem.requestFullscreen();
       } else if (elem.webkitRequestFullscreen) { /* Safari */
@@ -23,7 +24,7 @@
 
 <h1>DON'T PRESS THE BUTTON</h1>
   </br>
-  <input type="button" value="Button" onclick="msg()">
+  <input type="button" value="Button" onclick="msg()" id="badbutton">
 
 
 
