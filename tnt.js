@@ -1,24 +1,44 @@
-class MyExtension {
+class RayTechTools {
   getInfo() {
     return {
-      id: 'Ray',
-      name: 'RRR',
+      id: 'bruhmoment',
+      name: 'RayTech Tools',
       blocks: [
         {
-          opcode: 'hello',
-          blockType: Scratch.BlockType.COMMAND,
-          text: 'R[RRR]'
+          opcode: 'strictlyEquals',
+          blockType: Scratch.BlockType.BOOLEAN,
+          text: '[ONE] strictly equals [TWO]',
           arguments: {
-            RRR: {
-              type: Scratch.ArgumentType.REPORTER,
-              defaultValue: 'R'
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'First value'
             },
+            TWO: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: 'Second value'
+            }
+          }
+        },
+        {
+          opcode:"popUp",
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'Show Popup With [TEXT]',
+          arguments: {
+            TEXT: {
+            type: Scratch.ArgumentType.STRING,
+            defaultValue: 'Text'
+           }
+          }
         }
       ]
     };
   }
-  hello() {
-    return args.RRR;
+  strictlyEquals(args) {
+    // Note strict equality: Inputs must match exactly: in type, case, etc.
+    return args.ONE === args.TWO;
+  }
+  popUp(args){
+   alert(args.TEXT)
   }
 }
-Scratch.extensions.register(new MyExtension());
+Scratch.extensions.register(new RayTechTools());
