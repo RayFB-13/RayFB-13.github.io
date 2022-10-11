@@ -54,7 +54,7 @@ class RayTechTools {
     return "RayTech";
   }
   boolbruh(){
-    return true
+    return true;
   }
 }
 Scratch.extensions.register(new RayTechTools());
