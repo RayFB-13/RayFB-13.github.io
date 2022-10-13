@@ -29,7 +29,7 @@ class RayTechTools {
             defaultValue: 'Text'
            }
           }
-        }
+        },
         {
         opcode: 'bruh',
           blockType: Scratch.BlockType.REPORTER,
