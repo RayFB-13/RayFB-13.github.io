@@ -35,11 +35,6 @@ class RayTechTools {
           blockType: Scratch.BlockType.REPORTER,
           text: 'RayTech'
         }
-        {
-          opcode: 'boolbruh',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: 'Useing RayTech Tools?'
-        }
       ]
     };
   }
@@ -48,13 +43,10 @@ class RayTechTools {
     return args.ONE === args.TWO;
   }
   popUp(args){
-   alert(args.TEXT);
+   return alert(args.TEXT);
   }
   bruh(){
     return "RayTech";
-  }
-  boolbruh(){
-    return true;
   }
 }
 Scratch.extensions.register(new RayTechTools());
