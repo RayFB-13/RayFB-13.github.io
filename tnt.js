@@ -20,13 +20,13 @@ class RayTechTools {
           }
         },
         {
-          opcode:"popUp",
+          opcode:"comment",
           blockType: Scratch.BlockType.COMMAND,
-          text: 'Show Popup With [TEXT]',
+          text: '//[TEXT]',
           arguments: {
             TEXT: {
             type: Scratch.ArgumentType.STRING,
-            defaultValue: 'Text'
+            defaultValue: 'Comment'
            }
           }
         },
@@ -42,8 +42,8 @@ class RayTechTools {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
     return args.ONE === args.TWO;
   }
-  popUp(args){
-   return alert(args.TEXT);
+  comment(args){
+   alert(args.TEXT);
   }
   bruh(){
     return "RayTech";
