@@ -33,7 +33,7 @@ class RayTechTools {
         {
         opcode: 'bruh',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'RayTech'
+          text: ''
         },
         {
           opcode: 'gridToVal',
@@ -68,7 +68,7 @@ class RayTechTools {
    alert(args.TEXT);
   }
   bruh(){
-    return "RayTech";
+    return null;
   }
   gridToVal(args){
     return args.ONE;
