@@ -60,7 +60,7 @@ class RayTechTools {
     return "RayTech";
   }
   gridToVal(args){
-    return "args.ONE";
+    return args.ONE;
   }
 }
 Scratch.extensions.register(new RayTechTools());
