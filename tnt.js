@@ -42,7 +42,7 @@ class RayTechTools {
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.MATRIX,
-              defaultValue: "11011011"
+              defaultValue: "0"
             }
           }
         }
