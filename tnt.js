@@ -45,6 +45,17 @@ class RayTechTools {
               defaultValue: "0"
             }
           }
+        },
+        {
+        opcode: 'whatThePoint',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[ONE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.STRING,
+              defaultValue: "0"
+            }
+          }
         }
       ]
     };
@@ -60,6 +71,9 @@ class RayTechTools {
     return "RayTech";
   }
   gridToVal(args){
+    return args.ONE;
+  }
+  gridToVal(whatThePoint){
     return args.ONE;
   }
 }
