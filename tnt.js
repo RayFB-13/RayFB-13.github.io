@@ -31,11 +31,6 @@ class RayTechTools {
           }
         },
         {
-        opcode: 'bruh',
-          blockType: Scratch.BlockType.REPORTER,
-          text: "‭‭‭"‭‭
-        },
-        {
           opcode: 'gridToVal',
           blockType: Scratch.BlockType.REPORTER,
           text: '[ONE] To Binary',
@@ -56,7 +51,12 @@ class RayTechTools {
               defaultValue: "0"
             }
           }
-        }
+        },
+        {
+          opcode:"block",
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'The RayTech Block'
+          }
       ]
     };
   }
@@ -67,14 +67,14 @@ class RayTechTools {
   comment(args){
    alert(args.TEXT);
   }
-  bruh(){
-    return null;
-  }
   gridToVal(args){
     return args.ONE;
   }
   whatThePoint(args){
     return args.ONE;
+  }
+  whatThePoint(){
+    alert();
   }
 }
 Scratch.extensions.register(new RayTechTools());
