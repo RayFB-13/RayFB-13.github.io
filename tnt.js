@@ -20,6 +20,17 @@ class RayTechTools {
           }
         },
         {
+          opcode: 'gridToVal',
+          blockType: Scratch.BlockType.REPORTER,
+          text: '[ONE] To Binary',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.MATRIX,
+              defaultValue: null
+            }
+          }
+        },
+        {
           opcode:"comment",
           blockType: Scratch.BlockType.COMMAND,
           text: '//[TEXT]',
@@ -47,6 +58,9 @@ class RayTechTools {
   }
   bruh(){
     return "RayTech";
+  }
+  gridToVal(args){
+    return "args.ONE";
   }
 }
 Scratch.extensions.register(new RayTechTools());
