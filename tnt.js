@@ -73,7 +73,7 @@ class RayTechTools {
   gridToVal(args){
     return args.ONE;
   }
-  gridToVal(whatThePoint){
+  whatThePoint(args){
     return args.ONE;
   }
 }
