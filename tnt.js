@@ -5,6 +5,17 @@ class RayTechTools {
       name: 'RayTech Tools',
       blocks: [
         {
+          opcode: 'test',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'When [ONE]',
+          arguments: {
+            ONE: {
+              type: Scratch.ArgumentType.BOOLEAN,
+              defaultValue: "0"
+            }
+          }
+        },
+        {
           opcode: 'strictlyEquals',
           blockType: Scratch.BlockType.BOOLEAN,
           text: '[ONE] strictly equals [TWO]',
@@ -60,21 +71,29 @@ class RayTechTools {
       ]
     };
   }
+  onListener({ ONE }) {
+		const self = this;
+		if ((this.isRunning) && (this.socketListeners.hasOwnProperty(String(ONE)))) {
+			return String(ONE);
+		} else {
+			return false;
+		};
+	};
   strictlyEquals(args) {
     // Note strict equality: Inputs must match exactly: in type, case, etc.
     return args.ONE === args.TWO;
-  }
+  };
   comment(args){
    alert(args.TEXT);
-  }
+  };
   gridToVal(args){
     return args.ONE;
-  }
+  };
   whatThePoint(args){
     return args.ONE;
-  }
+  };
   whatThePoint(){
     alert();
-  }
+  };
 }
 Scratch.extensions.register(new RayTechTools());
