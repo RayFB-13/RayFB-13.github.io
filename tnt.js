@@ -6,7 +6,7 @@ class RayTechTools {
       blocks: [
         {
           opcode: 'test',
-          blockType: Scratch.BlockType.REPORTER,
+          blockType: "hat",
           text: 'When [ONE]',
           arguments: {
             ONE: {
